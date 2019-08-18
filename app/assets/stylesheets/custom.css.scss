@@ -1,6 +1,31 @@
 @import "semantic-ui";
 
+
+
 .container{
   width:80%;
   margin: 0 auto;
+}
+
+.flex-LR{
+  display: flex;
+  flex-direction: row;
+}
+
+.wide-block{
+  width: 66%;
+  min-height: 60vh;
+}
+
+.narrow-block{
+  width:33%;
+  min-height: 60vh;
+}
+
+.bordered{
+  border: 1px solid lightgrey;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 10px;
+  box-shadow: 2px 2px 2px #e3e3e3;
 }
