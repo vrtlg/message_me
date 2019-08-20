@@ -29,13 +29,9 @@ p{
 .wide-block{
   width: 66%;
   min-height: 60vh;
-}
-
-.chatbox{
-  display:flex;
+  display: flex;
   flex-direction: column;
   justify-content: space-between;
-  height: 500px;
 }
 
 .narrow-block{
