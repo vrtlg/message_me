@@ -1,0 +1,6 @@
+<% @messages.each do |m| %>
+  <div class="row">
+    <p class="screenname"><%= m.user.username %>:</p>
+    <p><%= m.body %></p>
+  </div>
+<% end %>

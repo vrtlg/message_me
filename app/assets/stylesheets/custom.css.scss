@@ -1,5 +1,21 @@
 @import "semantic-ui";
 
+p{
+  padding:0;
+  margin:0;
+}
+
+.row{
+  display:flex;
+  flex-direction: row wrap;
+}
+
+.screenname{
+  margin-right: 5px;
+  color: rgb(79,178,172);
+  font-weight: bold;
+}
+
 .container{
   width:80%;
   margin: 0 auto;
@@ -13,6 +29,13 @@
 .wide-block{
   width: 66%;
   min-height: 60vh;
+}
+
+.chatbox{
+  display:flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 500px;
 }
 
 .narrow-block{
@@ -31,8 +54,4 @@
 .bottom{
   position:relative;
   top: 60%;
-}
-
-b{
-  color: rgb(79,178,172);
 }
