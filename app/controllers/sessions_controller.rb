@@ -1,4 +1,5 @@
 class SessionsController < ApplicationController
+  before_action :logged_in_redirect, only: [:new, :create]
 
   def new
   end
@@ -14,13 +15,22 @@ class SessionsController < ApplicationController
       flash.now[:error] = "Incorrect username/password" #flash.now so it will show up on the same page
       render 'new'
     end
-    
+
   end
 
   def destroy
     session[:user_id] = nil
     flash[:success] = "You are now logged out"
     redirect_to login_path
+  end
+
+  private
+  def logged_in_redirect
+    if logged_in?
+      flash[:notice] = "You are already logged in"
+      redirect_to root_path
+    end
+
   end
 
 end
